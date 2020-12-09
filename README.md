@@ -17,7 +17,7 @@ networkx=2.5
 ### on synthetic datasets
 `python main_synthetic.py --model Flame`
 
-In synthetic_dataset repository, we provide 24 synthetic data files including A, B, Aggregation, S3, two_cluster, three_cluster, four_cluster, five_cluster, sn, fc1, Spiral2, Twomoons, Spiral3, Flame, E6, Jain, ThreeCircles, sk, line, circle, db4, db3, ls, and cth, where *.txt denotes raw datasets and *.gb0 indicates SPL adjacency matrix G_K that is pre-computed offline and then saved as a separate data file. Note that some *.gb0 files are temporarily missing here because the file sizes are too large to upload.
+In synthetic_dataset repository, we provide 24 synthetic data files including A, B, Aggregation, S3, two_cluster, three_cluster, four_cluster, five_cluster, sn, fc1, Spiral2, Twomoons, Spiral3, Flame, E6, Jain, ThreeCircles, sk, line, circle, db4, db3, ls, and cth, where *.txt denotes raw datasets, *_new.txt represents the ones with GT,  and *.gb0 indicates SPL adjacency matrix G_K that is pre-computed offline and then saved as a separate data file. In our G2-SCANN, loading the file *.gb0 instead of *.txt directly is only to save computational time while making clustering. Note that a few *.gb0 files are temporarily missing here because the file sizes are too large to upload.
 ### on real datasets
 `python main_real.py --model Iris`
 
